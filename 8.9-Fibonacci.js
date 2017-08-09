@@ -6,20 +6,20 @@ function fibonacci (n) {
     return 1;
   }
   else if (n >= 3) {
-    let firstNumber = 0;
-    let secondNumber = 1;
-    let thirdNumber = 0;
+    let a = 0;
+    let b = 1;
+    let c = 0;
     for (let i = 3; i <= n; i++) {
-      thirdNumber = firstNumber + secondNumber;
-      firstNumber = secondNumber;
-      secondNumber = thirdNumber;
+      c = a + b;
+      a = b;
+      b = c;
     }
-    return thirdNumber;
+    return c;
   } 
 }
 
-console.log(fibonacci (6));
-console.log(fibonacci (7));
-console.log(fibonacci (8));
-console.log(fibonacci (9));
-console.log(fibonacci (10));
+console.log(fibonacci (1));
+console.log(fibonacci (2));
+console.log(fibonacci (3));
+console.log(fibonacci (4));
+console.log(fibonacci (5));
